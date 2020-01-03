@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/article_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/img_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_brightness_1_black_24dp" />
+
+    <TextView
+        android:id="@+id/tv_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_view"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="Article Heading"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/img_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_chevron_right_black_24dp" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_heading"
+        android:layout_toRightOf="@+id/img_view"
+        android:paddingLeft="8dp"
+        android:paddingRight="4dp"
+        android:layout_toLeftOf="@+id/img_arrow"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/iron"
+        android:text="Article Descriptionfhdgs djgsfjhsdgfhsd fjsfdsjdf fgsdjgfsjdf" />
+
+
+    <TextView
+        android:id="@+id/tv_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_description"
+        android:layout_toRightOf="@+id/img_view"
+        android:paddingLeft="8dp"
+        android:textColor="@color/iron"
+        android:paddingTop="8dp"
+        android:text="Thmson" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_description"
+        android:layout_toRightOf="@+id/tv_source"
+        android:paddingLeft="60dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/iron"
+         />
+
+
+
+
+
+</RelativeLayout>
